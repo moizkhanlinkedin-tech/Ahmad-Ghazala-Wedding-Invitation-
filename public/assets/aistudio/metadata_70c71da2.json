@@ -1,0 +1,8 @@
+{
+  "name": "Soban & Tasmiya | Wedding Invitation",
+  "description": "Celebrate the wedding of Soban and Tasmiya on Sunday, 31st January 2027 at Milano Event Complex, Lahore. Digital unboxing, countdown, event details, and RSVP.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

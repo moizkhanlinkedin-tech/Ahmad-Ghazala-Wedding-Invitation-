@@ -1,0 +1,8 @@
+{
+  "name": "Ahmad & Ghazala | Wedding Invitation",
+  "description": "Celebrate the wedding ceremonies of Ahmad Khan & Ghazala Aslam — Barat on Saturday, 28th November 2026 and Walima on Sunday, 29th November 2026 in Lahore.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
