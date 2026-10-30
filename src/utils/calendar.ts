@@ -60,7 +60,7 @@ export const WEDDING_DATA = {
       },
       venueName: "Arifabad Tall wali Street",
       venueAddress: "Arifabad Tall wali Street, Bhata Chowk, Bedian Road, Lahore Cantt.",
-      mapsSearchUrl: "https://www.google.com/maps/search/?api=1&query=Arifabad+Bhata+Chowk+Bedian+Road+Lahore+Cantt",
+      mapsSearchUrl: "https://www.google.com/maps/search/?api=1&query=31.495484,74.4054311",
     } as EventDetail,
     walima: {
       id: "walima",

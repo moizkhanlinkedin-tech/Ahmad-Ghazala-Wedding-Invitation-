@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MapPin, Navigation, Copy, Check, ExternalLink, Calendar, Car, Compass } from 'lucide-react';
+import { MapPin, Navigation, Copy, Check, ExternalLink, Calendar, Car } from 'lucide-react';
 import { WEDDING_DATA } from '../utils/calendar';
 import { ScrollReveal } from './ScrollReveal';
 
@@ -123,45 +123,20 @@ export const VenueSection: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Right Map Placeholder Container */}
+                {/* Right Map Embedded Iframe Container */}
                 <div className="lg:col-span-7">
-                  <div className="w-full rounded-2xl overflow-hidden border-2 border-[#D4AF37]/40 shadow-inner bg-[#031C14] min-h-[300px] flex flex-col items-center justify-center relative p-6 text-center group">
-                    {/* BARAT GOOGLE MAP IFRAME PLACEHOLDER */}
-                    {/* <!-- BARAT GOOGLE MAP IFRAME PLACEHOLDER --> */}
-                    <div className="absolute inset-0 bg-[radial-gradient(#125A44_1px,transparent_1px)] [background-size:16px_16px] opacity-30 pointer-events-none" />
-
-                    <div className="relative z-10 flex flex-col items-center max-w-md">
-                      <div className="w-14 h-14 rounded-full bg-[#0A3D2E] border border-[#D4AF37] flex items-center justify-center text-[#D4AF37] mb-3 shadow-lg group-hover:scale-110 transition-transform">
-                        <Compass className="w-7 h-7" />
-                      </div>
-
-                      <span className="text-xs uppercase tracking-[0.25em] text-[#D4AF37] font-semibold mb-1">
-                        Barat Map Placeholder
-                      </span>
-
-                      <h4 className="text-base font-serif text-[#FFFDF0] font-medium mb-1">
-                        Arifabad Tall wali Street, Bhata Chowk
-                      </h4>
-
-                      <p className="text-xs text-[#A89568] mb-4">
-                        Bedian Road, Lahore Cantt.
-                      </p>
-
-                      <a
-                        href={barat.mapsSearchUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#125A44] hover:bg-[#1B7055] text-[#F3E5AB] text-xs font-medium border border-[#D4AF37]/50 transition-all"
-                      >
-                        <MapPin className="w-3.5 h-3.5 text-[#D4AF37]" />
-                        <span>Navigate via Google Maps</span>
-                      </a>
-
-                      <span className="text-[10px] text-[#A89568] mt-3 font-mono opacity-60">
-                        {/* BARAT GOOGLE MAP IFRAME PLACEHOLDER */}
-                        &lt;!-- BARAT GOOGLE MAP IFRAME PLACEHOLDER --&gt;
-                      </span>
-                    </div>
+                  <div className="w-full rounded-2xl overflow-hidden border-2 border-[#D4AF37]/40 shadow-inner bg-[#031C14] min-h-[300px]">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.0436481053484!2d74.4054311!3d31.495484049999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391905f7d319ce65%3A0x3b146f407d57c9a1!2sNadirabad%20Lahore%2C%20Pakistan!5e0!3m2!1sen!2s!4v1793362111983!5m2!1sen!2s"
+                      width="100%"
+                      height="300"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      title="Barat Ceremony Location Google Maps"
+                      className="w-full h-[300px] sm:h-[320px] rounded-2xl"
+                    />
                   </div>
                 </div>
               </div>
